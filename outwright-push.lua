@@ -10,7 +10,7 @@
 -- user's private METADATA under /private/vendor/vendor.outwright/push/, written by the app as
 -- "<relay_base><id>/plain <unix expiry>"; the app moves the expiry on while the phone uses it.
 -- Only values of exactly that form with an expiry still ahead are posted to, at most ten per
--- user, whatever a user writes there.
+-- user; anything else a user writes there is ignored, so the server never posts elsewhere.
 --
 -- Settings: relay_base, the start of every push address (https://push.outwright.app/v1/push/).
 -- Dovecot 2.4 passes it to script_init (push_notification lua { lua_settings { relay_base } });

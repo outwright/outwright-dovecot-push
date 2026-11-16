@@ -11,10 +11,11 @@ When mail is delivered to someone's Inbox, it tells Outwright's push relay, and 
 that person's iPhone. The phone then fetches the sender and subject from your server, as it does
 any other time.
 
-The script sends nothing of the mail: no sender, subject, text or address. It posts only to the
-push relay, whatever a user writes into their account. Each phone that switches push on writes
-its push address into the user's private IMAP METADATA (RFC 5464), and the script posts to the
-addresses it finds there. Push is part of the paid app, and each user switches it on in the
+The script sends nothing of the mail: no sender, subject, text or address. Each phone that
+switches push on writes its push address into the user's private IMAP METADATA (RFC 5464), and
+the script posts to the addresses it finds there. It only ever posts to the push relay: an
+address that points anywhere else is ignored, so a user cannot make your server send requests
+elsewhere. Push is part of the paid app, and each user switches it on in the
 app's settings for their account.
 
 ## What you need
