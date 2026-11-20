@@ -4,6 +4,9 @@ New-mail notifications for [Outwright](https://outwright.app) on Dovecot 2.4 and
 Lua script for Dovecot's `push_notification` plugin. The guide is also at
 [outwright.app/push/dovecot](https://outwright.app/push/dovecot).
 
+**Outwright is in alpha.** To join, sign up on [outwright.app](https://outwright.app/#join) and
+install it straight away with TestFlight.
+
 ## What it does
 
 Dovecot has no way for a mail app to ask for push by itself, so the server needs this script.
